@@ -1,0 +1,29 @@
+package Praktikum10;
+// Iqnas Yuswandana (064001800008)
+// Praktikum 10
+
+public class DataMahasiswa{
+     public static void main(String args[]) {
+         //data pribadi
+         Mahasiswa.snama = "Iqnas Yuswandana";
+         Mahasiswa.snim = "064001800008";
+         Mahasiswa.snim = 100;
+         
+         //mmebuat objek teman, m = mahasiswa
+         Mahasiswa m1 = new Mahasiswa("Annas Al Farisi", "064001800001", 97);
+         Mahasiswa m2 = new Mahasiswa("Rifaldo Yandi", "064001800030", 93);
+         
+         //pemanggilan
+         System.out.println("======DATA PRIBADI=====");
+         Mahasiswa.printDataPribadi();
+         System.out.println("======DATA MAHASISWA 1=====");
+         m1.printData();
+         System.out.println("======DATA MAHASISWA 2=====");
+         m2.printData();
+         
+    }
+ }
+ 
+ class Mahasiswa {
+     String tnama; //t = teman
+     String tnim;
